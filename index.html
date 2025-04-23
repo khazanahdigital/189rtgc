@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&B Auto Group | Premium Car Dealership</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>M&B<span>Auto Group</span></h1>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#inventory">Inventory</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Perfect Drive</h1>
+                <p>Premium selection of new and pre-owned vehicles at competitive prices</p>
+                <div class="hero-buttons">
+                    <a href="#inventory" class="btn btn-primary">Browse Inventory</a>
+                    <a href="#contact" class="btn btn-secondary">Schedule Test Drive</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Vehicles Section -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Vehicles</h2>
+                <p>Explore our premium selection of vehicles</p>
+            </div>
+            <div class="featured-vehicles">
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/car1.jpg" alt="BMW 5 Series">
+                        <div class="vehicle-tag">New Arrival</div>
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2023 BMW 5 Series</h3>
+                        <p class="vehicle-price">$58,999</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 8,500 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> 25/33 mpg</span>
+                            <span><i class="fas fa-cog"></i> Automatic</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/car2.jpg" alt="Audi Q7">
+                        <div class="vehicle-tag">Best Seller</div>
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2022 Audi Q7 Premium</h3>
+                        <p class="vehicle-price">$54,750</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 12,300 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> 19/25 mpg</span>
+                            <span><i class="fas fa-cog"></i> Automatic</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/car3.jpg" alt="Mercedes-Benz C-Class">
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2023 Mercedes-Benz C-Class</h3>
+                        <p class="vehicle-price">$49,800</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 6,200 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> 23/33 mpg</span>
+                            <span><i class="fas fa-cog"></i> Automatic</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="#inventory" class="btn btn-primary">View All Inventory</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Search Section -->
+    <section id="inventory" class="inventory">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Inventory</h2>
+                <p>Find the perfect vehicle that matches your needs</p>
+            </div>
+            <div class="search-filters">
+                <form class="filter-form">
+                    <div class="form-group">
+                        <select name="make" id="make">
+                            <option value="">All Makes</option>
+                            <option value="audi">Audi</option>
+                            <option value="bmw">BMW</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="honda">Honda</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="model" id="model">
+                            <option value="">All Models</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="year" id="year">
+                            <option value="">All Years</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="price" id="price">
+                            <option value="">Price Range</option>
+                            <option value="20000">Under $20,000</option>
+                            <option value="30000">Under $30,000</option>
+                            <option value="40000">Under $40,000</option>
+                            <option value="50000">Under $50,000</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+            <div class="inventory-results">
+                <div id="inventory-container" class="inventory-grid">
+                    <!-- Vehicles will be loaded here dynamically -->
+                </div>
+                <div id="no-results" class="placeholder-text">Use the filters above to search our inventory</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>We offer a wide range of automotive services</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>New & Pre-owned Sales</h3>
+                    <p>Browse our extensive inventory of new and certified pre-owned vehicles from top manufacturers.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Financing Options</h3>
+                    <p>Our finance experts work with multiple lenders to get you the best rates and terms.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Service & Maintenance</h3>
+                    <p>Factory-trained technicians provide quality service and maintenance for all makes and models.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Trade-In Appraisals</h3>
+                    <p>Get a fair market value for your current vehicle when you trade it in for a new one.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Extended Warranties</h3>
+                    <p>Protect your investment with our comprehensive extended warranty options.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-crash"></i>
+                    </div>
+                    <h3>Body Shop Services</h3>
+                    <p>Our professional body shop provides quality repairs and restoration services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/dealership.jpg" alt="M&B Auto Group Dealership">
+                </div>
+                <div class="about-text">
+                    <div class="section-header left-align">
+                        <h2>About M&B Auto Group</h2>
+                        <p>Your trusted partner in automotive excellence since 2005</p>
+                    </div>
+                    <p>M&B Auto Group has been serving our community with exceptional automotive sales and service for over 15 years. We pride ourselves on offering a premium selection of vehicles at competitive prices, backed by outstanding customer service.</p>
+                    <p>Our team of experienced professionals is dedicated to making your car buying experience as smooth and enjoyable as possible. We believe in building long-term relationships with our customers based on trust, integrity, and transparency.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Years in Business</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5,000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Vehicles in Stock</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Testimonials</h2>
+                <p>What our customers say about us</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The team at M&B Auto Group made buying my new car a breeze. They were knowledgeable, patient, and never pushy. I got a great deal on exactly the car I wanted!"</p>
+                        <div class="testimonial-author">
+                            <h4>Sarah Johnson</h4>
+                            <p>Satisfied Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"I've been bringing my vehicles to M&B for service for years. Their technicians are top-notch and always explain everything clearly. I wouldn't trust my car with anyone else!"</p>
+                        <div class="testimonial-author">
+                            <h4>Michael Rodriguez</h4>
+                            <p>Loyal Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The financing process was so much easier than I expected. They found me a great rate and worked with my budget. I'll definitely be back for my next vehicle purchase!"</p>
+                        <div class="testimonial-author">
+                            <h4>Jennifer Williams</h4>
+                            <p>First-time Buyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We're here to assist you with any questions</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Auto Drive, Cartown, CT 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>info@mbautogroup.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Mon-Fri: 9AM-7PM<br>Sat: 10AM-5PM<br>Sun: Closed</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="inquiry" name="inquiry">
+                                <option value="">Select Inquiry Type</option>
+                                <option value="sales">Sales Inquiry</option>
+                                <option value="service">Service Appointment</option>
+                                <option value="parts">Parts Inquiry</option>
+                                <option value="financing">Financing Options</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <div id="map">
+            <!-- Google Maps will be embedded here -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573036935!2d-73.98823492346204!3d40.75889083646541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzMyLjAiTiA3M8KwNTknMTQuMCJX!5e0!3m2!1sen!2sus!4v1619712943520!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>M&B<span>Auto Group</span></h2>
+                    <p>Your trusted partner in automotive excellence</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#inventory">Inventory</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">New Vehicles</a></li>
+                            <li><a href="#">Pre-owned Vehicles</a></li>
+                            <li><a href="#">Financing</a></li>
+                            <li><a href="#">Service & Parts</a></li>
+                            <li><a href="#">Body Shop</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Working Hours</h3>
+                        <ul class="hours">
+                            <li>Monday - Friday: 9AM - 7PM</li>
+                            <li>Saturday: 10AM - 5PM</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 M&B Auto Group. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

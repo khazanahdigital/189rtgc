@@ -1,0 +1,13 @@
+This directory contains placeholder images for the vehicle inventory.
+
+For a production website, replace these with actual high-quality photos of the vehicles in your inventory.
+
+Image naming convention:
+- make-model.jpg (e.g., audi-a3.jpg, bmw-5.jpg)
+- Additional images can be named with suffixes (e.g., audi-a3-interior.jpg)
+
+Recommended image specifications:
+- Resolution: 1200x800 pixels
+- Format: JPG or WebP
+- File size: Optimized for web (100-300KB per image)
+- Aspect ratio: 3:2 (landscape)
